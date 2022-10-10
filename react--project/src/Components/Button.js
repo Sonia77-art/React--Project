@@ -1,9 +1,11 @@
-export default function Button() {
-    return <button>Click</button>;
-   }
+export default function Button(props) {
+    function handleClick(event) { 
+          console.log("button was clicked")
 
-   export function Button2(props) {
-    return <button>{props.Menu}</button>;
-
-   }
+            alert("Button was clicked");
+       
+    }
+    return <button onClick= {handleClick}>{props.text}</button>;
+}
+   
    
