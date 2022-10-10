@@ -11,6 +11,7 @@ function App() {
         <Button text="Menu"></Button>
         <Button text="About Us"></Button>
         <Button text="Services"></Button>
+        <Button text = "Order Oline"></Button>
 
         <img src={logo} className="App-logo" alt="logo" />
         <p>
