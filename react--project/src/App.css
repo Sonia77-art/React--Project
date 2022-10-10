@@ -36,3 +36,26 @@
     transform: rotate(360deg);
   }
 }
+
+.foodpic {
+  position: relative;
+  left: 0;
+  width: 30%;
+  height: 50%;
+  
+}
+
+
+.Nav {
+  display: flex;
+  justify-content: space-around;
+  align-items : baseline;
+  width: 70%;
+
+}
+ 
+h1 {
+  font-style: italic;
+  font-size: 1.5em;
+}
+
