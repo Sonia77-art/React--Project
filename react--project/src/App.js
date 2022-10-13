@@ -1,44 +1,79 @@
-
-import './App.css';
-import Button from './Components/Button'
 import food from './food.png';
+import './App.css';
+import Menu from './Components/Menu';
+import SearchBar from './Components/SearchBar';
+
 
 function App() {
-  return (
-    <div className="App">
+  return ( 
+    <>
+ <header className="App-header"> 
+ <SearchBar text= " "> </SearchBar>
 
-      <header className="App-header">
-      <div className="Nav">
-        <Button text="Contact Us"></Button>
-        <Button text="Menu"></Button>
-        <h1>The Food
-           Suppliers</h1>
-        <Button text="About Us"></Button>
-        <Button text="Services"></Button>
-        <Button text = "Order Oline"></Button>
+  <div className="Nav">
+ <Menu text="Menu">
+ <ul>
+   <li>Milk</li>
+     <li>Meat</li>
+   <li>Vegtables</li>
+ </ul> 
+</Menu>
 
-      </div>
+<Menu text="Contact Us"> 
+ <li>Phone </li>
+ <li>Email</li>
+ <li>Messages</li>
+</Menu>
 
-        <h3> Are You Busy</h3>
-        <h2>DONT WORRY</h2>
-        
+<Menu text="About Us">
+     <li>Location</li>
+     <li>History</li>
+     <li>Branches</li>
 
-        <img src={food} className="foodpic" alt="basket" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          
-          Learn React
-        </a>
-      </header>
+ </Menu>
+
+<Menu text="Services">
+    <li>Dining</li>
+    <li>Takeaway</li>
+    
+</Menu>
+
     </div>
+    </header>
+
+
+    <div>
+         <h1>THE
+          <br /> 
+          <spam>GROCERY TOWN</spam> 
+        </h1>
+
+
+        <Menu text = "Order Oline"></Menu>
+        
+    </div>
+    
+    <div>
+        <img src= {food}
+         alt="food.png"
+         width= "400"
+         height="600" >
+
+    </img>
+    
+       </div>
+
+
+         
+
+    </> 
+              
+              
   );
 }
 
+
+
+
 export default App;
+

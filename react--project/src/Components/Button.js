@@ -7,5 +7,5 @@ export default function Button(props) {
     }
     return <button onClick= {handleClick}>{props.text}</button>;
 }
-   
+
    
