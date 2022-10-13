@@ -2,6 +2,7 @@ import food from './food.png';
 import './App.css';
 import Menu from './Components/Menu';
 import SearchBar from './Components/SearchBar';
+import OrderButton from './Components/OrderButton';
 
 
 function App() {
@@ -48,7 +49,7 @@ function App() {
           <spam>GROCERY TOWN</spam> 
         </h1>
 
-
+        <OrderButton> "Order Your Food" </OrderButton>
         <Menu text = "Order Oline"></Menu>
         
     </div>
